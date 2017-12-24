@@ -4,35 +4,41 @@
 
 ## prepare
 
-```
+``` 
 
-1. install node
+# install node
 
-2. install vue-cli
+# install vue-cli
 npm install -g vue-cli
 
-3. vue init
+# vue init
 vue init webpack projectName
-If you want to init in current directory: vue init webpack
+
+#If you want to init in current directory
+vue init webpack
 
 ```
+
 
 ## test eslint
 
+```
 
-1.  npm install --save-dev eslint babel-eslint eslint-plugin-vue@4.0.0-beta.4 eslint-config-huawei
+# install
+npm install --save-dev eslint babel-eslint eslint-plugin-vue@4.0.0-beta.4 eslint-config-huawei
 
-2.  add .eslintrc.js in root directory (specific in .eslintrc.js)
+# add .eslintrc.js in root directory (specific in .eslintrc.js)
 
-3.  add `"lint": "eslint src/**/*.vue"` 
+# add "lint": "eslint src/**/*.vue" or "lint-fix": "eslint --fix src/**/*.vue" in package.json  (specific in package.json)
+# you can use another name as you like to replace `lint`&`lint-fix`
 
-or `"lint-fix": "eslint --fix src/**/*.vue"` in package.json  (specific in package.json)
+# see lint result
+npm run lint
 
-  you can use another name as you like to replace `lint`&`lint-fix`
+# fix&see lint result
+npm run lint-fix
 
-4.  run `npm run lint`, then you will see the result report
-
-or run `npm run lint-fix` to fix errors and see report
+```
 
 ## Vue Build Setup
 
